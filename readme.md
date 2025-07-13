@@ -8,6 +8,7 @@ $ python -m venv .venv
 $ source .venv/bin/activate
 $ which python
 $ pip install "fastapi[standard]"
+$ pip install "uvicorn[standard]"
 ```
 
 # Run it
@@ -15,6 +16,7 @@ Run the server with:
 ```
 # Development
 $ fastapi dev main.py
+$ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 # Production
 $ fastapi run main.py
 ```
